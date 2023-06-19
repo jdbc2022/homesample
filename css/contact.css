@@ -1,0 +1,108 @@
+/* Form style */
+input, textarea, select {
+	font-size: 14px;
+	font-family: Rufina, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	border: 0;
+	-webkit-transition: all 0.2s ease 0s;
+	-moz-transition: all 0.2s ease 0s;
+	-o-transition: all 0.2s ease 0s;
+	transition: all 0.2s ease 0s;
+	float: none;
+	display: block;
+	margin: 0px;
+	-webkit-appearance: none;
+	background: none
+}
+textarea {
+	resize: none;
+}
+#message {
+	margin: 0;
+	padding: 0px;
+	z-index: 200;
+	height: auto;
+}
+.error_message, #success_page {
+	display: block;
+	height: auto;
+	color: #d31800;
+	font-style: italic;
+	font-size: 12px;
+	padding: 10px 0px 0px 0px;
+	line-height: 1.5;
+	margin-bottom: -10px;
+	position: relative;
+}
+#success_page {
+	color: #2b2b2b !important;
+}
+.loader {
+	display: none;
+}
+/* Form Element Styling */
+.form-part {
+	padding: 0;
+	margin: 0px 0 8px;
+	margin-top: -10px;
+	position: relative;
+}
+.form-part > textarea, .form-part > select, .form-part > input:not([type="submit"]):not([type="image"]):not([type="button"]):not([type="checkbox"]):not([type="radio"]) {
+	display: block;
+	width: 100%;
+	padding: 12px 15px 12px;
+	margin-bottom: 10px;
+	border-bottom: 2px solid #d8d8d8;
+	line-height: 20px;
+	text-align: center;
+}
+.form-part > textarea {
+	height: 200px;
+	resize: none;
+}
+.form-part > .input-wrapper {
+	position: relative;
+}
+input:focus {
+	background: none !important;
+}
+.send-btn {
+	text-indent: -9999px;
+	display: block;
+	width: 30px;
+	height: 24px;
+}
+.send-btn-wrapper {
+	position: relative;
+	text-align: center;
+	left: 50%;
+	margin-left: -15px;
+	width: 30px;
+	height: 24px;
+}
+.send-btn-wrapper::after {
+	content: "\f1d8";
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: inherit;
+	color: #666;
+	font-size: 18px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 30px;
+	height: 24px;
+	text-align: center;
+	-webkit-transition: all 0.2s ease 0s;
+	-moz-transition: all 0.2s ease 0s;
+	-o-transition: all 0.2s ease 0s;
+	transition: all 0.2s ease 0s;
+}
+.send-btn-wrapper:hover::after {
+	color: #2b2b2b;
+	-webkit-transition: all 0.2s ease 0s;
+	-moz-transition: all 0.2s ease 0s;
+	-o-transition: all 0.2s ease 0s;
+	transition: all 0.2s ease 0s;
+}
